@@ -1,0 +1,51 @@
+
+
+@font-face {
+    font-family: 'Ledger';
+    src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+nav {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the content */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    font-family: "Ledger", sans-serif;
+    font-size: 20px;
+    color: #5c6248;
+    fill: #5c6248;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: gray;
+}
+
+ul img {
+    width: 90px;
+}
+
+.elementor-divider{
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+}

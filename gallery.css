@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Ledger';
+    src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts//Cormorant/static/Cormorant-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the paintings horizontally */
+    gap: 20px; /* Adjust the space between paintings */
+    margin-bottom:50px;
+}
+
+.painting {
+    text-align: center;
+    flex: 0 0 calc(50% - 20px); /* Two paintings per row */
+    max-width: calc(40% - 100px);
+    margin-bottom: 40px;
+}
+
+.painting img {
+    width: 440px;
+    height: 527px;
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.label {
+    margin-top: 5px;
+    font-family: "Cormorant", Sans-serif;
+    font-size: 40px;
+    color:#5C6248;
+}
+  
+  .size {
+    font-family: "Ledger", Sans-serif;
+    font-size: 20px;
+    color:#5C6248;
+    margin-top:10px;
+  }
+  

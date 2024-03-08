@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Ledger';
+    src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts//Cormorant/static/Cormorant-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+.about{
+    font-family: "Ledger", Sans-serif;
+    font-size: 20px;
+    display:flex;
+    justify-content: center; 
+    color: #5C6248;
+    fill: #5C6248;
+}
+
+.about-pic{
+    width: 510px;
+    height: 808px;
+}
+
+.about-div{
+    font-size:48px;
+    font-family: "Cormorant", Sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+.about-container{
+    padding:40px;
+    width: 30%;
+    margin-top:8%;
+}
+
+p{
+    text-align:center;
+}
