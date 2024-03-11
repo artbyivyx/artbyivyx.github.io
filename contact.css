@@ -1,72 +1,39 @@
-
 @font-face {
     font-family: 'Ledger';
     src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
 }
+
 body {
     margin: 0;
 }
 
-.contact{
+.contact {
     font-family: "Ledger", Sans-serif;
     font-size: 20px;
     color: #5C6248;
-    padding: 50px 200px;
+    padding: 50px 20px; 
+    text-align: center; 
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-}
-
-.contact-header{
-    font-size:25px;
-    font-weight:bold;
-    padding-bottom:20px;
-}
-
-#message{
-    resize: none;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-input[type="file"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
+.contact-header {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .contact-container {
     display: flex;
-    align-items: center; /* Align items vertically */
-    margin:5px 0px;
+    align-items: center; 
+    justify-content: center; 
+    margin: 5px 0px;
 }
 
 .contact-icon {
-    width: 24px; /* Adjust the width of the icon */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5px; /* Adjust spacing between icon and text */
+    width: 24px; 
+    height: auto; 
+    margin-right: 5px; 
 }
 
 .contact-text {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px; 
 }

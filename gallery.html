@@ -5,68 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="nav.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant"
-      rel="stylesheet"
-    />
     <title>Home - Welcome</title>
   </head>
   <body>
     <nav>
       <ul>
         <li>
-          <a href="./index.html"><img src="images/logo.png" alt="Logo" /></a>
+          <a href="./index.html"><img src="images/logo.png" /></a>
         </li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./about_me.html">About Me</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
+        <li class="nav-item"><a href="./about_me.html">About Me</a></li>
+        <li class="nav-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="elementor-divider">
       <span class="elementor-divider-separator"> </span>
     </div>
-
     <div class="gallery">
       <div class="painting">
-        <img src="images/gray_sculpt.png" alt="Gray Sculpt" />
+        <a href="images/gray_sculpt.png" class="lightbox-link">
+          <img src="images/gray_sculpt.png" alt="Gray Sculpt" />
+        </a>
         <div class="label">gray sculpt</div>
         <div class="size">40x34in</div>
       </div>
       <div class="painting">
-        <img src="images/pianists_delight.png" alt="Pianist's Delight" />
+        <a href="images/pianists_delight.png" class="lightbox-link">
+          <img
+            class="pianists-delight"
+            src="images/pianists_delight.png"
+            alt="Pianist's Delight"
+          />
+        </a>
         <div class="label">pianist's delight</div>
         <div class="size">24x20in</div>
       </div>
+
       <div class="painting">
-        <img src="images/tiger_song.png" alt="Tiger Song" />
+        <a href="images/tiger_song.png" class="lightbox-link">
+          <img src="images/tiger_song.png" alt="Tiger Song" />
+        </a>
         <div class="label">tiger song</div>
         <div class="size">34x40in</div>
       </div>
       <div class="painting">
-        <img src="images/lovers_reproduction.png" alt="Lovers Reproduction" />
+        <a href="images/lovers_reproduction.png" class="lightbox-link">
+          <img src="images/lovers_reproduction.png" alt="Lovers Reproduction" />
+        </a>
         <div class="label">"The Lovers" Reproduction</div>
         <div class="size">34x40in</div>
       </div>
       <div class="painting">
-        <img src="images/verde.png" alt="Verde" />
+        <a href="images/verde.png" class="lightbox-link">
+          <img class="verde" src="images/verde.png" alt="Verde" />
+        </a>
         <div class="label">verde</div>
         <div class="size">14x11in</div>
       </div>
       <div class="painting">
-        <img src="images/golden_boy.png" alt="Golden Boy" />
+        <a href="images/golden_boy.png" class="lightbox-link">
+          <img src="images/golden_boy.png" alt="Golden Boy" />
+        </a>
         <div class="label">golden boy</div>
         <div class="size">14x11in</div>
       </div>
       <div class="painting">
-        <img src="images/lil_peek.png" alt="lil' peek" />
+        <a href="images/lil_peek.png" class="lightbox-link">
+          <img src="images/lil_peek.png" alt="lil' peek" />
+        </a>
         <div class="label">lil' peek</div>
         <div class="size">20x16in</div>
       </div>
       <div class="painting">
-        <img src="images/kiss.png" alt="kiss" />
+        <a href="images/kiss.png" class="lightbox-link">
+          <img src="images/kiss.png" alt="kiss" />
+        </a>
         <div class="label">kiss</div>
         <div class="size">10x8in</div>
       </div>
     </div>
+
+    <div id="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-content" src="" alt="" />
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

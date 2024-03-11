@@ -1,50 +1,121 @@
 @font-face {
     font-family: 'Ledger';
     src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
-}
+} 
 @font-face {
     font-family: 'Cormorant';
-    src: url('fonts//Cormorant/static/Cormorant-Regular.ttf') format('truetype');
+    src: url('fonts/Cormorant/static/Cormorant-Regular.ttf') format('truetype');
 }
 
 body {
     margin: 0;
 }
 
+/* ul li a{
+    font-size:22px !important;
+}
+ul img {
+    width:100px !important;
+}
+nav{
+    padding:22px !important;
+} */
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the paintings horizontally */
-    gap: 20px; /* Adjust the space between paintings */
-    margin-bottom:50px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 
 .painting {
     text-align: center;
-    flex: 0 0 calc(50% - 20px); /* Two paintings per row */
-    max-width: calc(40% - 100px);
+    flex: 1 0 calc(50% - 20px);
+    max-width: calc(40% - 20px);
     margin-bottom: 40px;
 }
 
+.pianists-delight {
+    width: 528px !important;
+}
+
+.verde {
+    width: 540px !important;
+}
+
 .painting img {
-    width: 440px;
-    height: 527px;
-    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    width: 550px;
+    height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.painting img:hover {
+    opacity: 0.8;
 }
 
 .label {
     margin-top: 5px;
     font-family: "Cormorant", Sans-serif;
     font-size: 40px;
-    color:#5C6248;
+    color: #5C6248;
 }
-  
-  .size {
+
+.size {
     font-family: "Ledger", Sans-serif;
     font-size: 20px;
-    color:#5C6248;
-    margin-top:10px;
-  }
-  
+    color: #5C6248;
+    margin-top: 10px;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.label,
+.size {
+    display: block;
+    font-family: "Cormorant", Sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .painting {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .painting {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
