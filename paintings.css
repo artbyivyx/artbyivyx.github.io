@@ -96,6 +96,21 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+    .gallery {
+        padding: 0 10px;
+    }
+
+    .painting {
+        flex: 1 0 calc(50% - 20px); 
+        max-width: calc(50% - 20px); 
+    }
+
+    nav ul {
+        min-width: 250px; 
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .painting {
         flex: 1 0 100%;
