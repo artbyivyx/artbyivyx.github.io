@@ -28,6 +28,10 @@ body {
     margin: 5px 0px;
 }
 
+.contact-body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .contact-icon {
     width: 24px; 
     height: auto; 
