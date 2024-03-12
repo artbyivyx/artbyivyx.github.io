@@ -2,6 +2,7 @@
     font-family: 'Ledger';
     src: url('fonts/Ledger/Ledger-Regular.ttf') format('truetype');
 } 
+
 @font-face {
     font-family: 'Cormorant';
     src: url('fonts/Cormorant/static/Cormorant-Regular.ttf') format('truetype');
@@ -15,27 +16,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 40px; /* Increased gap */
     margin-bottom: 50px;
+    padding: 0 20px; /* Added padding for smaller screens */
 }
 
 .painting {
     text-align: center;
-    flex: 1 0 calc(50% - 20px);
-    max-width: calc(40% - 20px);
+    flex: 1 0 calc(50% - 40px); /* Adjusted flex for larger gap */
+    max-width: calc(50% - 40px); /* Adjusted max-width for larger gap */
     margin-bottom: 50px;
-}
-
-.pianists-delight {
-    width: 528px !important;
-}
-
-.verde {
-    width: 540px !important;
+    margin-left:50px;
+    margin-right:50px;
 }
 
 .painting img {
-    width: 550px;
+    max-width: 100%; /* Ensure images don't exceed their container width */
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -95,32 +91,24 @@ body {
     margin-top: 5px;
 }
 
-
-@media screen and (max-width: 500px) {
-    .gallery {
-        padding: 0 10px;
-    }
-
+@media screen and (min-width: 1200px) {
     .painting {
-        flex: 1 0 calc(50% - 20px); 
-        max-width: calc(50% - 20px); 
-    }
-
-    nav ul {
-        min-width: 250px; 
+        flex: 1 0 calc(32%);
+        max-width: calc(32%);
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 651px) and (max-width: 1200px) {
     .painting {
-        flex: 1 0 100%;
-        max-width: 100%;
+        flex: 1 0 calc(55%); /* Adjusted flex for two paintings per row */
+        max-width: calc(55%); /* Adjusted max-width */
     }
+    
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) {
+@media screen and (max-width: 650px) {
     .painting {
-        flex-basis: calc(50% - 20px);
-        max-width: calc(50% - 20px);
+        flex: 1 0 calc(100% - 40px); /* Adjusted flex for one painting per row */
+        max-width: calc(100% - 40px); /* Adjusted max-width */
     }
 }
