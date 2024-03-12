@@ -20,9 +20,15 @@ body {
     color: #5C6248;
 }
 
+.image-container {
+    width: 100%;
+    max-width: 510px;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
 .about-pic {
     width: 100%; 
-    max-width: 510px; 
     height: auto; 
 }
 
