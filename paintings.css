@@ -11,16 +11,6 @@ body {
     margin: 0;
 }
 
-/* ul li a{
-    font-size:22px !important;
-}
-ul img {
-    width:100px !important;
-}
-nav{
-    padding:22px !important;
-} */
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
