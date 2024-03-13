@@ -4,8 +4,15 @@ body {
 
 .home_page_pic {
     max-width: 90%;
+    max-height: 80vh;
     height: auto;
     display: block;
     margin: auto;
     padding: 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .home_page_pic {
+        max-width: 70%; 
+    }
 }

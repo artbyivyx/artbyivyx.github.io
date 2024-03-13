@@ -16,22 +16,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Increased gap */
+    gap: 40px; 
     margin-bottom: 50px;
-    padding: 0 20px; /* Added padding for smaller screens */
+    padding: 0 20px; 
 }
 
 .painting {
     text-align: center;
-    flex: 1 0 calc(50% - 40px); /* Adjusted flex for larger gap */
-    max-width: calc(50% - 40px); /* Adjusted max-width for larger gap */
+    flex: 1 0 calc(50% - 40px); 
+    max-width: calc(50% - 40px); 
     margin-bottom: 50px;
     margin-left:50px;
     margin-right:50px;
 }
 
 .painting img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
+    max-width: 100%; 
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -100,15 +100,15 @@ body {
 
 @media screen and (min-width: 651px) and (max-width: 1200px) {
     .painting {
-        flex: 1 0 calc(55%); /* Adjusted flex for two paintings per row */
-        max-width: calc(55%); /* Adjusted max-width */
+        flex: 1 0 calc(55%);
+        max-width: calc(55%);
     }
     
 }
 
 @media screen and (max-width: 650px) {
     .painting {
-        flex: 1 0 calc(100% - 40px); /* Adjusted flex for one painting per row */
-        max-width: calc(100% - 40px); /* Adjusted max-width */
+        flex: 1 0 calc(100% - 40px);
+        max-width: calc(100% - 40px); 
     }
 }
