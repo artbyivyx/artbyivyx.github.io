@@ -96,6 +96,18 @@ body {
         flex: 1 0 calc(32%);
         max-width: calc(32%);
     }
+
+    .pianists-delight {
+        width: 96%; 
+    }
+
+    .verde{
+        width:98.5%;
+    }
+
+    .pisces{
+        width:97.5%
+    }
 }
 
 @media screen and (min-width: 651px) and (max-width: 1200px) {
@@ -103,7 +115,19 @@ body {
         flex: 1 0 calc(55%);
         max-width: calc(55%);
     }
+
+    .pianists-delight {
+        width: 96%; 
+    }
     
+    .verde{
+        width:98.5%;
+    }
+
+    .pisces{
+        width:97.5%
+    }
+
 }
 
 @media screen and (max-width: 650px) {
