@@ -11,11 +11,11 @@
 body {
     margin: 0;
 }
-
 .about {
     font-family: "Ledger", Sans-serif;
     font-size: 22px;
     display: flex;
+    align-items: center; 
     justify-content: center; 
     color: #5C6248;
 }
@@ -25,10 +25,12 @@ body {
     max-width: 560px; 
     padding: 0 20px; 
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .about-pic {
-    width: 100%; 
+    max-width: 100%; 
     height: auto; 
 }
 
@@ -43,7 +45,6 @@ body {
 .about-container {
     padding: 40px;
     width: 25%; 
-    margin-top: 8%;
 }
 
 p {
