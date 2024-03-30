@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Set background color to white */
+    margin: 0 auto; /* Center the footer horizontally */
+    position: relative; /* Add relative positioning */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 37%; /* Set maximum width to 70% of the viewport */
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-contact-icons li {
+    margin-right: 10px;
+}
+
+.footer .footer-contact-icons .footer-contact-icon {
+    width: 24px;
+    height: auto;
+}
+
+.footer {
+    box-shadow: none !important;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%; /* Position it at the center horizontally */
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 100vw; /* Set its width to the full viewport width */
+    height: 100%;
+    background-color: white; /* Match the background color of the footer */
+    z-index: -1; /* Send it behind the footer content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply the box shadow */
+}
+
+.mail {
+    width: 30px;
+    height: auto;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+    .footer {
+        max-width: 52%; 
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+    .footer {
+        max-width: 73%; 
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .footer {
+        max-width: 100%; 
+    }
+}
